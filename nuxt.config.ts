@@ -5,22 +5,31 @@ export default defineNuxtConfig({
     dev: true,
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
     i18n: {
-        locales: [
-            {
-              code: 'en',
-              file: 'en.json'
-            },
-            {
-              code: 'fr',
-              file: 'fr.json'
-            },
-            {
-              code: 'ar',
-              file: 'ar.json'
-            }
-        ],
-        lazy: true,
-        langDir: 'lang',
-        defaultLocale: 'en'
+      locales: [
+        {
+          code: 'ar',
+          name: 'العربية',
+          dir: 'rtl',
+          iso: 'ar-MR',
+          file: 'ar-MR.json',
+        },
+        {
+          code: 'en',
+          name: 'English',
+          dir: 'ltr',
+          iso: 'en-MR',
+          file: 'en-MR.json',
+        },
+        {
+          code: 'fr',
+          name: 'Francais',
+          dir: 'ltr',
+          iso: 'fr-MR',
+          file: 'fr-MR.json',
+        },
+      ],
+      lazy: true,
+      langDir: 'lang',
+      defaultLocale: 'en'
     }
 })
