@@ -1,9 +1,9 @@
 <template>
     <div :dir="$i18n.localeProperties.dir" class="h-20">
         <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
-            <div class="flex items-center">
+            <NuxtLink :to="localePath('index')" class="flex items-center">
             <img src="~/assets/Logo_black.svg" alt="Logo" class="h-4">
-            </div>
+            </NuxtLink>
             <ul class="items-center hidden md:flex">
             <li class="mx-3 ">
                 <NuxtLink :to="localePath('/')" class="growing-underline">
